@@ -1,35 +1,98 @@
-/* -----------------------------------------------------------------------------
-// This file includes deliberate errors in order for you to verify that
-// Stylelint and EditorConfig are working properly. If both tools are, indeed,
-// working correctly, then you’d see various errors in your editor about
-// indentation and violations of CSS syntax. When you save this file, your
-// editor should strip all excess newlines and whitespace characters from the
-// file. If both of these events occur, then Stylelint and EditorConfig are
-// working correctly.
-//
-// DON’T PROCEED UNTIL YOU’RE SURE STYLELINT AND EDITORCONFIG ARE WORKING RIGHT
-// -------------------------------------------------------------------------- */
-abcdef {
-     color: cs275
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px; /* Space below "Album Reviews" */
 }
 
+.album-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
+.artist-name {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+  background-color: white;
+  color: black;
+}
 
+.carousel {
+  position: relative;
+  width: 90%;
+  max-width: 640px;
+  margin: 20px auto 0;
+  overflow: hidden;
+  border: 2px solid white;
+  background-color: white;
+  padding: 10px;
+  min-height: 500px;
+}
 
+.carousel-slides {
+  display: flex;
+  transition: transform .5s ease-in-out;
+}
 
+.carousel-slide {
+  display: none;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
 
+.carousel-slide.active {
+  display: block;
+  opacity: 1;
+}
 
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+}
 
+.carousel-navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 10;
+}
 
+.carousel-navigation a {
+  background: black;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
 
+.carousel-navigation img {
+  width: 30px;
+  height: 30px;
+}
 
-
-
-
-
-
-
-
-
-
+.review-link {
+  font-size: 1rem;
+  font-weight: bold;
+  color: blue;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
