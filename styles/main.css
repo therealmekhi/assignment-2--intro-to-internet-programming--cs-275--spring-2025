@@ -9,27 +9,51 @@
 //
 // DON’T PROCEED UNTIL YOU’RE SURE STYLELINT AND EDITORCONFIG ARE WORKING RIGHT
 // -------------------------------------------------------------------------- */
-abcdef {
-     color: cs275
+
+body {
+  font-size: 16px;
+  line-height: 1.4;
 }
 
+h1 {
+  font-size: 2rem;
+  line-height: 1.1875;
+  font-weight: 600;
+  text-align: center;
+}
 
+.carousel-slides {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
 
+.carousel {
+  display: flex;
+  position: relative;
+  width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
 
+.slide-item {
+  padding: 20px;
+  display: block;
+  transition: transform 500ms ease-in-out;
+}
 
+.carousel-navigation {
+  display: flex;
+  z-index: 10;
+  justify-content: space-between;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.carousel-items-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
